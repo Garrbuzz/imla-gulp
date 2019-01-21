@@ -1,0 +1,4 @@
+.grid-10-10{
+	display:grid;
+	grid-template-columns: 10% repeat(10, 1fr) 10%;
+}
