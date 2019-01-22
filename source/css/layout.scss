@@ -1,4 +1,24 @@
-.grid-10-10{
+.grid-7-22-7{
 	display:grid;
-	grid-template-columns: 10% repeat(10, 1fr) 10%;
+	grid-template-columns: 7% repeat(22, 1fr) 7%;
+}
+.block-grid-5-20{
+	grid-column: 5/20;
+}
+.block-grid-3-23{
+	grid-column: 3/23;
+}
+.flex-center-wrap{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.flex-wrap-sp{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.image{
+	background: url('../img/car.jpg') #111 no-repeat;
+	background-size: 100%;
 }

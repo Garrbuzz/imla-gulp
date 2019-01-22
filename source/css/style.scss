@@ -2,3 +2,129 @@
 @import "layout.scss";
 @import "header.scss";
 @import "nav.scss";
+$f: verdana;
+body{
+	background:#ddd;
+	font-family: $f;
+}
+/*  index  */
+.index{
+	margin: 1.5em 0;
+}
+/*  end index  */
+/* about */
+.title-1{
+	margin:1.5em 0;
+}
+.title-1 h1{
+    font-weight: 100;
+	color: #eee;
+}
+.image-content{
+	background: rgba(50, 50, 50, .2);
+	border-radius: 0.2em;
+	padding: 1em 3em;
+	p{
+		color: #ddd;
+		font-size: 0.9em;
+		letter-spacing: 0.007em;
+		line-height: 1.5;
+	}
+}
+ 
+.about-foto-row{
+	width: 100%;
+	align-items: stretch;
+	background: rgba(20, 20, 20, .7);
+	padding: 1em 0;
+
+	
+}
+.about-foto-elem{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 420px;
+}
+.about-foto-elem img{
+	height: 20em;
+	width: 20em;
+}
+
+/* video */
+/* footer */
+footer{
+	background: #222;
+	height: 5em;
+}
+.social{
+	grid-column:9/17;
+	margin: auto;	
+}
+.social div{
+	margin: 0 2em;
+	display: flex;
+}
+.footer-tel{
+	grid-column: 3/9;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: left;
+	margin: auto;	
+}
+.footer-tel, .footer-mail p{
+	font-family: verdana;
+	color: #4bffff;
+}
+.footer-mail{
+	grid-column: 18/24;
+	margin: auto;	
+}
+.footer-mail a:hover{
+	cursor: pointer;
+}
+/* footer */
+/* modal window */
+.overlay{
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(40, 40, 40, .8);
+	z-index: 1000;
+}
+.feedback-cover{
+	display: flex;
+	justify-content: center;
+	margin: 10% auto;
+}
+.feedback{
+	display: inline-block;
+	background: rgba(20, 20, 20, .8);
+	border-radius: 0.5em;
+}
+.feedback p{
+	color: #4bffff;
+	font-weight: 100;
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+}
+
+.feedback div{
+	text-align: center;
+	margin: 0.3em 1em;
+}
+.feedback textarea {
+	resize: none;
+	font-size: 1.3em;
+}
+.feedback-buttons{
+	padding: 2em 0;
+}
+.feedback button{
+	margin: 2em;
+}
+
+/* end modal window */

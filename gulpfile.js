@@ -58,6 +58,7 @@ function jsP() {
 function html() {
 	return gulp.src('./source/html/**/*.html')
 		.pipe(gulp.dest('../../OpServ/OSPanel/domains/imla'))
+		.pipe(browserSync.stream());
 }
 function php() {
 	return gulp.src('./source/php/**/*.php')
@@ -81,9 +82,10 @@ function watch(){
             // }
         
     });
-    gulp.watch("source/html/*.html").on('change', browserSync.reload);
+    gulp.watch('../../OpServ/OSPanel/domains/imla/**/*.html', gulp.series('html'))
     gulp.watch('./source/css/**/*.scss', gulp.series('cssD'))
 	gulp.watch('./source/js/**/*.js', gulp.series('jsD'))
+
 }
 gulp.task('cssD', cssD);
 gulp.task('cssP', cssP);
