@@ -82,7 +82,7 @@ function watch(){
             // }
         
     });
-    gulp.watch('../../OpServ/OSPanel/domains/imla/**/*.html', gulp.series('html'))
+    gulp.watch('./source/html/**/*.*', gulp.series('html'))
     gulp.watch('./source/css/**/*.scss', gulp.series('cssD'))
 	gulp.watch('./source/js/**/*.js', gulp.series('jsD'))
 
@@ -96,5 +96,5 @@ gulp.task('php', php);
 gulp.task('img', img);
 gulp.task('clean', cleanDest);
 gulp.task('watch', watch);
-gulp.task('d', gulp.series('clean', gulp.parallel('cssD', 'jsD', 'php', 'html', 'img'), 'watch'))
+gulp.task('d', watch)
 gulp.task('p', gulp.series('clean', gulp.parallel('cssP', 'jsP', 'php', 'html', 'img')))
