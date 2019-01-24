@@ -5,8 +5,9 @@
 $f: verdana;
 $c_t1:#fff;
 body{
-	background:#ddd;
+	// background:#111;
 	font-family: $f;
+
 }
 /*  index  */
 .index{
@@ -56,7 +57,7 @@ body{
 /* footer */
 footer{
 	background: #222;
-	height: 5em;
+	height: 8em;
 }
 .social{
 	grid-column:9/17;

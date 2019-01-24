@@ -98,3 +98,4 @@ gulp.task('clean', cleanDest);
 gulp.task('watch', watch);
 gulp.task('d', watch)
 gulp.task('p', gulp.series('clean', gulp.parallel('cssP', 'jsP', 'php', 'html', 'img')))
+gulp.task('dx', gulp.series('clean', gulp.parallel('cssD', 'jsD', 'php', 'html', 'img')))
