@@ -130,3 +130,29 @@ footer{
 }
 
 /* end modal window */
+/* slider */
+
+.slider-cover{
+  position: relative;
+  height: 680px;
+  display: flex;
+  margin: auto;
+}
+.slide{
+	position: relative;
+	height: 620px;
+	width: 500px;
+	margin: 30px 5em;
+}
+.slide	 img{
+	position: absolute;
+}
+.showed{
+	opacity: 1;
+	transition: opacity .3s linear;
+}
+.hide{
+	opacity: 0;
+	transition: opacity .3s linear;
+}
+/* slider end */

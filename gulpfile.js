@@ -24,7 +24,7 @@ function cssP() {
             cascade: false
         }))
         .pipe(cleanCSS({level:2}))
-		.pipe(gulp.dest('../../OpServ/OSPanel/domains/imla/css'))
+		.pipe(gulp.dest('./www/css'))
 		.pipe(debug({title: 'Копіювання css: '}))
 		.pipe(browserSync.stream());
 }
@@ -40,14 +40,14 @@ function cssD() {
             browsers: ['last 2 versions'],
             cascade: false
         }))
-        .pipe(gulp.dest('../../OpServ/OSPanel/domains/imla/css'))
+        .pipe(gulp.dest('./www/css'))
 		.pipe(debug({title: 'Копіювання css: '}))
 		.pipe(browserSync.stream());
 }
 
 function jsD() {
 	return gulp.src('./source/js/**/*.js')
-		.pipe(gulp.dest('../../OpServ/OSPanel/domains/imla/js'))
+		.pipe(gulp.dest('./www/js'))
 		pipe(browserSync.stream());
 }
 function jsP() {
@@ -57,20 +57,20 @@ function jsP() {
 }
 function html() {
 	return gulp.src('./source/html/**/*.html')
-		.pipe(gulp.dest('../../OpServ/OSPanel/domains/imla'))
+		.pipe(gulp.dest('./www'))
 		.pipe(browserSync.stream());
 }
 function php() {
 	return gulp.src('./source/php/**/*.php')
-		.pipe(gulp.dest('../../OpServ/OSPanel/domains/imla/js'))
+		.pipe(gulp.dest('./www/js'))
 }
 function img() {
 	return gulp.src('./source/img/**/*.*')
 	.pipe(imagemin())
-		.pipe(gulp.dest('../../OpServ/OSPanel/domains/imla/img'))
+		.pipe(gulp.dest('./www/img'))
 }
 function cleanDest() {
-	return gulp.src('../../OpServ/OSPanel/domains/imla', {read: false})
+	return gulp.src('./www', {read: false})
 		.pipe(clean({force: true}));
 }
 function watch(){
@@ -82,7 +82,9 @@ function watch(){
             // }
         
     });
-    gulp.watch('./source/html/**/*.*', gulp.series('html'))
+    gulp.watch('./source/img/**/*.*', gulp.series('img'))
+    gulp.watch('./source/php/**/*.php', gulp.series('php'))
+    gulp.watch('./source/html/**/*.html', gulp.series('html'))
     gulp.watch('./source/css/**/*.scss', gulp.series('cssD'))
 	gulp.watch('./source/js/**/*.js', gulp.series('jsD'))
 

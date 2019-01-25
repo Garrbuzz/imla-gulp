@@ -2,6 +2,9 @@
 	display:grid;
 	grid-template-columns: 7% repeat(22, 1fr) 7%;
 }
+.block-grid-6-21{
+	grid-column: 6/21;
+}
 .block-grid-5-20{
 	grid-column: 5/20;
 }
