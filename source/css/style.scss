@@ -4,23 +4,63 @@
 @import "nav.scss";
 $f: verdana;
 $c_t1:#fff;
+$acid1:#18C;
+$acid2:#4bffff;
 body{
 	// background:#111;
 	font-family: $f;
 
+}
+.inwork{
+	height: 35em;
 }
 /*  index  */
 .index{
 	margin: 1.5em 0;
 }
 /*  end index  */
+// audio
+.audio{
+	h1{
+		text-align: center;
+		color:$c_t1;
+		font-weight: 100;
+	}
+	h2{
+		color:$acid2;
+		font-weight: 100;
+	}
+	h3{
+		color:$acid2;
+		font-weight: 100;
+	}
+	a{
+	text-decoration: none;
+	color: yellow;
+	}
+	a:visited{
+	color: yellow;
+	}
+	a:hover{
+	color: #faa;
+	}
+	span{
+	font-size: 1.5em;
+	margin: 0 3em;
+	}
+}
+// audio end
 /* about */
 .title-1{
 	margin:1.5em 0;
-}
-.title-1 h1{
-    font-weight: 100;
+	h1{
+		font-weight: 100;
 	color: #eee;
+	}
+	h2{
+		font-weight: 100;
+	color: #eee;
+	}
 }
 .image-content{
 	background: rgba(50, 50, 50, .2);
@@ -54,6 +94,60 @@ body{
 }
 
 /* video */
+// photo
+.image-content img{
+	margin: 1em 0.5em
+}
+// end photo
+/* contacts */
+.contacts{
+	background: rgba(50, 50, 50, .2);
+	border-radius: 0.2em;
+	padding: 1em 3em;
+	font-family: verdana;
+	text-align: center;
+
+}
+.contacts-title h1{
+	color: #4bffff;
+	font-weight: 100;
+}
+.contacts h2{
+	color: #fff;
+	font-weight: 100;	
+}
+
+.contacts h3{
+		color: #88a;
+	font-weight: 100;
+}
+
+.contacts p{
+	color: #aaa;
+}
+
+.phone, .email{
+	color: #4bffff;
+	font-size: 1.5em;
+
+}
+.contacts button{
+	border: 0;
+	background: #6c6;
+	font-size: 1.5em;
+	border-radius: 0.5em;
+	padding: 0.2em 1em;
+	box-shadow: 0 0 1em 0.1em	 rgba(50, 255, 255, .4);
+	transition: background .3s ease-in-out;
+}
+.contacts button:hover{
+	cursor: pointer;
+	background: #4bffff;
+}
+
+/* end contacts	 */
+
+
 /* footer */
 footer{
 	background: #222;

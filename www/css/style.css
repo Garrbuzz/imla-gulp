@@ -305,11 +305,11 @@ template {
   display: grid;
   grid-template-columns: 7% repeat(22, 1fr) 7%; }
 
-.block-grid-6-21 {
-  grid-column: 6/21; }
+.block-grid-6-20 {
+  grid-column: 6/20; }
 
-.block-grid-5-20 {
-  grid-column: 5/20; }
+.block-grid-5-19 {
+  grid-column: 5/19; }
 
 .block-grid-3-23 {
   grid-column: 3/23; }
@@ -461,18 +461,50 @@ nav li:hover ul {
 body {
   font-family: verdana; }
 
+.inwork {
+  height: 35em; }
+
 /*  index  */
 .index {
   margin: 1.5em 0; }
 
 /*  end index  */
+.audio h1 {
+  text-align: center;
+  color: #fff;
+  font-weight: 100; }
+
+.audio h2 {
+  color: #4bffff;
+  font-weight: 100; }
+
+.audio h3 {
+  color: #4bffff;
+  font-weight: 100; }
+
+.audio a {
+  text-decoration: none;
+  color: yellow; }
+
+.audio a:visited {
+  color: yellow; }
+
+.audio a:hover {
+  color: #faa; }
+
+.audio span {
+  font-size: 1.5em;
+  margin: 0 3em; }
+
 /* about */
 .title-1 {
   margin: 1.5em 0; }
-
-.title-1 h1 {
-  font-weight: 100;
-  color: #eee; }
+  .title-1 h1 {
+    font-weight: 100;
+    color: #eee; }
+  .title-1 h2 {
+    font-weight: 100;
+    color: #eee; }
 
 .image-content {
   background: rgba(50, 50, 50, 0.2);
@@ -510,6 +542,52 @@ body {
   width: 20em; }
 
 /* video */
+.image-content img {
+  margin: 1em 0.5em; }
+
+/* contacts */
+.contacts {
+  background: rgba(50, 50, 50, 0.2);
+  border-radius: 0.2em;
+  padding: 1em 3em;
+  font-family: verdana;
+  text-align: center; }
+
+.contacts-title h1 {
+  color: #4bffff;
+  font-weight: 100; }
+
+.contacts h2 {
+  color: #fff;
+  font-weight: 100; }
+
+.contacts h3 {
+  color: #88a;
+  font-weight: 100; }
+
+.contacts p {
+  color: #aaa; }
+
+.phone, .email {
+  color: #4bffff;
+  font-size: 1.5em; }
+
+.contacts button {
+  border: 0;
+  background: #6c6;
+  font-size: 1.5em;
+  border-radius: 0.5em;
+  padding: 0.2em 1em;
+  -webkit-box-shadow: 0 0 1em 0.1em rgba(50, 255, 255, 0.4);
+  box-shadow: 0 0 1em 0.1em rgba(50, 255, 255, 0.4);
+  -webkit-transition: background .3s ease-in-out;
+  transition: background .3s ease-in-out; }
+
+.contacts button:hover {
+  cursor: pointer;
+  background: #4bffff; }
+
+/* end contacts	 */
 /* footer */
 footer {
   background: #222;

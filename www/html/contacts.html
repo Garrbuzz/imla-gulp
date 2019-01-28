@@ -10,12 +10,12 @@
 
 </head>
 <body>
-	<div class="wrap"></div>
-	<header class = "section header">
+<div class="wrap"></div>
+	<header class = "grid-7-22-7">
 		<div class="logo"><a href="../index.html"><img src="../img/logo.jpg" alt=""></a></div>
 		<nav class="navigation">
 			<ul class="navtop">
-				<li><a href="../html/about.html">Гурт</a></li>
+				<li ><a href="../html/about.html">Гурт</a></li>
 				<li><a href="../html/media.html">Медіа</a>
 					<ul class = "sub-nav">
 						<div class = "li-sub">
@@ -32,10 +32,17 @@
 				<li class="current"><a>Контакти</a></li>
 			</ul>
 		</nav>
+				<div class="breadcrumbs">
+			<ul>
+				<li><a href="../index.html">Головна</a></li>
+				<li><img src="../img/bread.png" alt=""></li>
+				<li><a>контактна інформація</a></li>
+			</ul>
+		</div>
 	</header>
-	<section class="section image">
-		<div class="contacts-title"><h1>Зв'язатися з нами можна так:</h1></div>
-		<div class="contacts">
+	<section class="grid-7-22-7">
+		<div class="block-grid-5-19 flex-center-wrap title-1"><h1>Зв'язатися з нами можна так:</h1></div>
+		<div class="block-grid-5-19 image-content contacts">
 			<h2>Найшвидший спосіб:</h2>
 			<button onclick="openModal()">Написати повідомлення</button>
 			<p>Ми отримаємо ваше повідомлення та відповімо на нього.</p>
@@ -45,23 +52,23 @@
 			<h3>Надісдати листа:</h3>
 			<p><span class="email">imla@imla.com.ua</span></p>
 		</div>
-		<div class="contacts-title"><h1>Послухати нас можна тут:</h1></div>
-		<div class="contacts">
+		<div class="block-grid-5-19 flex-center-wrap title-1"><h1>Послухати нас можна тут:</h1></div>
+		<div class="block-grid-5-19 image-content contacts ">
 			<a href="https://soundcloud.com/imlaband" target="_blank"><img src="../img/soundcloud.png" alt="facebook"></a>
 		</div>
 	</section>	
 	
-	<footer class="section">
+	<footer class="grid-7-22-7">
 		<div class="footer-tel">
 			<p>Зателефонувати: <span>067&nbsp445&nbsp45&nbsp23</span></p>
 		</div>
-		<div class="social">
+		<div class="flex-center-wrap social">
 			<div><a href="https://www.facebook.com/IMLABAND/?fb_dtsg_ag=Adzz3RQHXoKSGTsP5UJZs5YCEBkxrjhmsGMdjlBhlnYlIw%3AAdzNxz7ZZLg7-Lg2FFadYs_KEjEaHu91Hal4B85s3RXPLA" target="_blank"><img src="../img/fb.png" alt="facebook"></a></div>
 			<div><a href="https://soundcloud.com/imlaband" target="_blank"><img src="../img/soundcloud.png" alt="facebook"></a></div>
 			<div><a href="https://www.youtube.com/channel/UCsIcg1M7jcQIXC7FOJ-n3NQ" target="_blank"><img src="../img/yt.png" alt="facebook"></a></div>
 		</div>
-		<div class="footer-mail">
-			<p>Написати: <span>imla@imla.com.ua</span></p>
+		<div class="flex-center-wrap footer-mail">
+			<p><a><span onclick="openModal()">Написати:</span></a> <span>imla@imla.com.ua</span></p>
 		</div>	
 	</footer>
 		
